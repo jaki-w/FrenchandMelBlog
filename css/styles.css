@@ -17,12 +17,10 @@ h2 {
   margin-right: auto;
 }
 
-#speak {
+#banner {
   margin-left: 70px;
   margin-right: 70px;
   margin-top: 20px;
-  border-width: medium;
-  border: solid #000;
   position: relative;
 }
 
