@@ -26,6 +26,10 @@ h2 {
   position: relative;
 }
 
+#speak-return {
+  text-align: center;
+}
+
 .photo-credit {
   font-size: 10px;
 }
