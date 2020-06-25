@@ -41,3 +41,7 @@ h3 {
 .btn {
   margin-left: 50px;
 }
+
+#story {
+  display: none;
+}
