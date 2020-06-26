@@ -27,6 +27,29 @@ $(document).ready(function() {
     $('ul#Meli').children('li').remove();
     $('ul#Frenchie').children('li').remove();
     $('ul#Meli').prepend("<li>Aww, five more minutes? I hate goodbyes!</li>");
-      $('ul#Frenchie').prepend("<li>*barely looks your way with indifference*</li>");
+    $('ul#Frenchie').prepend("<li>*barely looks your way with indifference*</li>");
+  });
+});
+$(document).ready(function() {
+  $("#formWalk").submit(function(event) {
+    const personInput = $("input#person").val();
+    const dogInput = $("input#dog").val();
+    const buildingInput = $("input#building").val();
+    const nounInput = $("input#noun").val();
+    const adjectiveInput = $("input#adjective").val();
+    const verbInput = $("input#verb").val();
+    const foodInput = $("input#food").val();
+
+    $(".person").text(personInput);
+    $(".dog").text(dogInput);
+    $(".building").text(buildingInput);
+    $(".noun").text(nounInput);
+    $(".adjective").text(adjectiveInput);
+    $(".verb").text(verbInput);
+    $(".food").text(foodInput);
+
+    $("#story").show();
+
+    event.preventDefault();
   });
 });
