@@ -30,6 +30,12 @@ $(document).ready(function() {
     $('ul#Frenchie').prepend("<li>*barely looks your way with indifference*</li>");
   });
 });
+
+$(document).ready(function() {
+  $("#walkClick").click(function() {
+    $("form").show();
+  })
+})
 $(document).ready(function() {
   $("#formWalk").submit(function(event) {
     const personInput = $("input#person").val();
