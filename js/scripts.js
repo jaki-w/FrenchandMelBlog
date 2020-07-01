@@ -34,8 +34,8 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#walkClick").click(function() {
     $("form").show();
-  })
-})
+  });
+});
 $(document).ready(function() {
   $("#formWalk").submit(function(event) {
     const personInput = $("input#person").val();
@@ -57,5 +57,16 @@ $(document).ready(function() {
     $("#story").show();
 
     event.preventDefault();
+  });
+});
+
+$(document).ready(function() {
+  $("#form-advice").submit(function(event) {
+      const nameInput = $("input#advice-col-name").val();
+      const subjectInput = $("input#advice-col-subject").val();
+      const questionInput = $("input#advice-col-quesiton").val();
+
+      alert(nameInput);
+      event.preventDefault();
   });
 });
