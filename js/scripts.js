@@ -69,6 +69,7 @@ $(document).ready(function() {
       $("#usersName").text(nameInput);
       $("#userSubject").text(subjectInput);
       $("#sentenceReturn").text(questionInput.toUpperCase());
+      $('.initially-hidden').show();
       event.preventDefault();
   });
 });

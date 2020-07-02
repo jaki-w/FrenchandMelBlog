@@ -58,3 +58,7 @@ form.initally-hidden {
   text-decoration: underline;
   color: pink;
 }
+
+.initially-hidden {
+  display: none;
+}
