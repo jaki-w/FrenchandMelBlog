@@ -64,9 +64,10 @@ $(document).ready(function() {
   $("#form-advice").submit(function(event) {
       const nameInput = $("input#advice-col-name").val();
       const subjectInput = $("input#advice-col-subject").val();
-      const questionInput = $("input#advice-col-quesiton").val();
+      const questionInput = $("input#advice-col-question").val();
 
-      alert(nameInput);
+      $("#usersName").text(nameInput);
+      //alert(questionInput.toUpperCase();
       event.preventDefault();
   });
 });
