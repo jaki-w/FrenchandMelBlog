@@ -67,7 +67,8 @@ $(document).ready(function() {
       const questionInput = $("input#advice-col-question").val();
 
       $("#usersName").text(nameInput);
-      //alert(questionInput.toUpperCase();
+      $("#userSubject").text(subjectInput);
+      $("#sentenceReturn").text(questionInput.toUpperCase());
       event.preventDefault();
   });
 });
