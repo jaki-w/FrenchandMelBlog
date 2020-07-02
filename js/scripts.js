@@ -73,3 +73,15 @@ $(document).ready(function() {
       event.preventDefault();
   });
 });
+
+$(document).ready(function() {
+  $("#choiceHappy").click(function() {
+    alert("Happy people give happy pets(to me)!");
+  });
+  $("#choiceSad").click(function() {
+    alert("You are worthy and loved! Btw doggies help to relieve the sads.");
+  });
+  $("#choiceBored").click(function() {
+    alert("If you have the doldrums, remember that my ears need to be cleaned.");
+  });
+});
