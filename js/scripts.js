@@ -75,13 +75,26 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("#choiceHappy").click(function() {
-    alert("Happy people give happy pets(to me)!");
+  $("#affirmationButton").click(function(event) {
+
+  const feelings = $("input:radio[name = feelings]:checked").val();
+
+  if(feelings === 'happy') {
+    alert("working!");
+  } else if(feelings === 'sad') {
+    alert("so sad!");
+  } else {
+    alert("aha!");
+  }
   });
-  $("#choiceSad").click(function() {
-    alert("You are worthy and loved! Btw doggies help to relieve the sads.");
-  });
-  $("#choiceBored").click(function() {
-    alert("If you have the doldrums, remember that my ears need to be cleaned.");
-  });
+
+  // $("#choiceHappy").click(function() {
+  //   alert("Happy people give happy pets(to me)!");
+  // });
+  // $("#choiceSad").click(function() {
+  //   alert("You are worthy and loved! Btw doggies help to relieve the sads.");
+  // });
+  // $("#choiceBored").click(function() {
+  //   alert("If you have the doldrums, remember that my ears need to be cleaned.");
+  // });
 });
