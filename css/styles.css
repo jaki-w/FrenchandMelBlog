@@ -62,3 +62,7 @@ form.initally-hidden {
 .initially-hidden {
   display: none;
 }
+
+#quizLink {
+  color: pink;
+}
