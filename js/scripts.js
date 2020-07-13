@@ -107,10 +107,16 @@ $(document).ready(function() {
      const q8 = parseInt($("input:radio[name=Q8]:checked").val());
      const q9 = parseInt($("input:radio[name=Q9]:checked").val());
      const q10 = parseInt($("input:radio[name=Q10]:checked").val());
+     const quizTotal = q1+q2+q3+q4+q5+q6+q7+q8+q9+q10;
 
-     let quizTotal;
-
-
-
+     let result;
+     if (quizTotal <= 14) {
+       result = "Meli";
+     } else if (quizTotal <=24 ) {
+       result = "Frenchie";
+     } else {
+       result = "Bowser";
+     }
+     alert(result);
   });
 });
