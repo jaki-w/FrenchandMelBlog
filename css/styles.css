@@ -63,10 +63,11 @@ form.initally-hidden {
   display: none;
 }
 
-#quizLink {
-  color: pink;
-}
 
 p {
   text-align: center;
+}
+
+#personalityQuiz {
+  display: none;
 }
