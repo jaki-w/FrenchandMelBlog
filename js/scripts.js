@@ -65,11 +65,13 @@ $(document).ready(function() {
       const nameInput = $("input#advice-col-name").val();
       const subjectInput = $("input#advice-col-subject").val();
       const questionInput = $("input#advice-col-question").val();
+      let inputSplit = questionInput.split();
 
-      $("#usersName").text(nameInput);
-      $("#userSubject").text(subjectInput);
+      $(".usersName").text(nameInput);
+      $(".userSubject").text(subjectInput);
       $("#sentenceReturn").text(questionInput.toUpperCase());
       $('.initially-hidden').show();
+      alert(inputSplit);
       event.preventDefault();
   });
 });
