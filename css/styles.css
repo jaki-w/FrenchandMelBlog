@@ -2,6 +2,7 @@ h1 {
   text-align: center;
   font-size: 100px;
   font-family: monospace;
+  margin-bottom: 80px;
 }
 
 h2 {
@@ -70,4 +71,9 @@ p {
 
 #advice-response {
   display: none;
+}
+
+#sidebar {
+  border-style: solid;
+  background-color: #f551d7;
 }
