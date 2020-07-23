@@ -46,10 +46,6 @@ h3 {
   display: none;
 }
 
-form.initally-hidden {
-  display:none;
-}
-
 .clickable {
   cursor: pointer;
 }
