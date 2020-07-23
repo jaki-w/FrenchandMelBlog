@@ -63,6 +63,9 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#adviceClick").click(function(event) {
     $("#advice").show();
+    $("#quiz").hide();
+    $("#affirmation").hide();
+    $("#walk").hide();
   });
 });
 
@@ -80,7 +83,7 @@ $(document).ready(function() {
       $("#sentenceReturn").text(questionInput.toUpperCase());
       $(".firstElement").text(firstElement.toUpperCase());
       $(".lastElement").text(lastElement.toUpperCase());
-      $('.initially-hidden').show();
+      $('#advice-response').show();
       event.preventDefault();
   });
 });

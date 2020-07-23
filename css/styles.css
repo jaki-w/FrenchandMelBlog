@@ -67,3 +67,7 @@ p {
 #personalityQuiz {
   display: none;
 }
+
+#advice-response {
+  display: none;
+}
