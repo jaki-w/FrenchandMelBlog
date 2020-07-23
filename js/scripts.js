@@ -80,6 +80,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $("#affirmationClick").click(function(event) {
+    $("#affirmations").show();
+  })
+})
+
+$(document).ready(function() {
   $("#affirmationButton").click(function(event) {
 
   const feelings = $("input:radio[name = feelings]:checked").val();
