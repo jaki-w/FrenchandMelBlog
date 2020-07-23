@@ -34,6 +34,10 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#walkClick").click(function() {
     $("#walk").show();
+    $("#advice").hide();
+    $("#quiz").hide();
+    $("#affirmations").hide();
+    alert("Adventure awaits! Please scroll down.");
   });
 });
 $(document).ready(function() {
@@ -64,8 +68,9 @@ $(document).ready(function() {
   $("#adviceClick").click(function(event) {
     $("#advice").show();
     $("#quiz").hide();
-    $("#affirmation").hide();
+    $("#affirmations").hide();
     $("#walk").hide();
+    alert("Frenchie loves to judge. Please scroll down.");
   });
 });
 
@@ -91,6 +96,10 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#affirmationClick").click(function(event) {
     $("#affirmations").show();
+    $("#quiz").hide();
+    $("#advice").hide();
+    $("#walk").hide();
+    alert("Meli is ready to receive your vibrations. Please scroll down.");
   });
 });
 
@@ -112,6 +121,10 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#quizClick").click(function() {
     $("#quiz").show();
+    $("#affirmations").hide();
+    $("#walk").hide();
+    $("#advice").hide();
+    alert("Your quiz is ready! Please scroll down.");
   });
 });
 
