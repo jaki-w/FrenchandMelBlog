@@ -108,7 +108,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#quizClick").click(function() {
-    $("quiz").show();
+    $("#quiz").show();
   });
 });
 
