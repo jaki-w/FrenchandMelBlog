@@ -61,6 +61,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $("#adviceClick").click(function(event) {
+    $("#advice").show();
+  });
+});
+
+$(document).ready(function() {
   $("#form-advice").submit(function(event) {
       const nameInput = $("input#advice-col-name").val();
       const subjectInput = $("input#advice-col-subject").val();
@@ -82,8 +88,8 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#affirmationClick").click(function(event) {
     $("#affirmations").show();
-  })
-})
+  });
+});
 
 $(document).ready(function() {
   $("#affirmationButton").click(function(event) {
