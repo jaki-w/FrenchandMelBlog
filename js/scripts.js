@@ -59,6 +59,7 @@ $(document).ready(function() {
     $(".food").text(foodInput);
 
     $("#story").show();
+    alert("Wow, what an adventure! Scroll down to read all about it.");
 
     event.preventDefault();
   });
@@ -89,6 +90,7 @@ $(document).ready(function() {
       $(".firstElement").text(firstElement.toUpperCase());
       $(".lastElement").text(lastElement.toUpperCase());
       $('#advice-response').show();
+      alert("Frenchie has a lot to say about that...scroll down at your own risk!");
       event.preventDefault();
   });
 });
