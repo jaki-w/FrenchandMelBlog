@@ -107,8 +107,8 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("#takeQuiz").click(function() {
-    $("#personalityQuiz").show();
+  $("#quizClick").click(function() {
+    $("quiz").show();
   });
 });
 
