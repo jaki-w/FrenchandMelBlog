@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#walkClick").click(function() {
-    $("form").show();
+    $("#walk").show();
   });
 });
 $(document).ready(function() {
