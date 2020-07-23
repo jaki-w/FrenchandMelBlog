@@ -137,24 +137,24 @@
         <button type="submit" class="btn btn-primary" id="affirmationButton">Affirmation, please!</button>
       </div><!--affirmations-->
 
-        <div class="col-md-6">
-          <h3>Dear Frenchie,</h3>
-          <p>Ask Frenchie for advice!</p>
-          <form id="form-advice">
-            <div class="form-group">
-              <label for="advice-col-name">Your name:</label>
-              <input id="advice-col-name" class="form-control" type="text">
-            </div><!--form-group-->
-            <div class="form-group">
-              <label for="advice-col-subject">Subject:</label>
-              <input type="text" id="advice-col-subject" class="form-control">
-            </div><!--form-group-->
-            <div class="form-group">
-              <label for="advice-col-question">Please type in your question: </label>
-              <input type="text" id="advice-col-question" class="form-control">
-            </div><!--form-group-->
-            <button type="submit" class="btn">Send</button>
-          </form>
+      <div id="advice" class="initially-hidden">
+        <h3>Dear Frenchie,</h3>
+        <p>Ask Frenchie for advice!</p>
+        <form id="form-advice">
+          <div class="form-group">
+            <label for="advice-col-name">Your name:</label>
+            <input id="advice-col-name" class="form-control" type="text">
+          </div><!--form-group-->
+          <div class="form-group">
+            <label for="advice-col-subject">Subject:</label>
+            <input type="text" id="advice-col-subject" class="form-control">
+          </div><!--form-group-->
+          <div class="form-group">
+            <label for="advice-col-question">Please type in your question: </label>
+            <input type="text" id="advice-col-question" class="form-control">
+          </div><!--form-group-->
+          <button type="submit" class="btn">Send</button>
+        </form>
           <div class="initially-hidden">
             <p><span class="usersName"></span>,<br> I am quite busy licking myself, but I suppose I can spare a moment to help you with your <span class="userSubject"></span> problem.</p> </p> So, <span id="sentenceReturn">?</span> The first thing to know is: <span class="userSubject"></span> never trust <span class="usersName"></span>'s. Proceed with caution because your strong <span class="usersName"></span> odor tends to scare everything away. It's true. No use denying it.</p>
             <p>Next time you wonder <span class="firstElement"></span> <span class="userSubject"></span> are <span class="lastElement"></span> stop and remember that you are the virus.<br><br>Kisses and salty licks,<br>Frenchie</p>
