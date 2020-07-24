@@ -17,15 +17,21 @@
           <img src="img/F&M.jpg" alt="a small black and brown dog, and a small black dog staring attentively." id="main-img">
         </div><!--column-->
         <div class="col-md-4" id="sidebar">
-          <h3>Play Time!</h3>
-          <p>Click a link below to have some fun with the doggos.</p>
-          <ul>
-            <li class="clickable" id="walkClick">Take French of Mel on an adventurous walk</li>
-            <li class="clickable" id="adviceClick">Visit Frenchie's advice column</li>
-            <li class="clickable" id="affirmationClick">Ask Meli for an affirmation</li>
-            <li class="clickable" id="quizClick">Are you a Frenchie or a Meli? Take a quiz to find out!</li>
-          </ul>
-        </div>
+          <div id="play">
+            <h3>Play Time!</h3>
+            <p>Click a link below to have some fun with the doggos.</p>
+            <ul>
+              <li class="clickable" id="walkClick">Take French of Mel on an adventurous walk</li>
+              <li class="clickable" id="adviceClick">Visit Frenchie's advice column</li>
+              <li class="clickable" id="affirmationClick">Ask Meli for an affirmation</li>
+              <li class="clickable" id="quizClick">Are you a Frenchie or a Meli? Take a quiz to find out!</li>
+            </ul>
+          </div><!--play-->
+          <div id="happenings">
+            <h3>Happenings</h3>
+            <p>click an image see </p>
+          </div>
+        </div><!--column-->
       </div><!--row-->
 
       <div class="speak">
@@ -121,21 +127,28 @@
       </div><!--walk-->
 
       <div id="affirmations" class="initially-hidden">
-        <h3>Affirmations by Mel</h3>
-        <p>Let Meli know how you're feeling and recieve an affirmation in return :)</p>
-        <div class="radio">
-          <label>
-            <input type="radio" id="choiceHappy" name="feelings" value="happy" checked>Happy</label>
-        </div><!--radio-->
-        <div class="radio">
-          <label>
-            <input type="radio" id="choiceSad" name="feelings" value="sad">Sad</label>
-        </div><!--radio-->
-        <div class="radio">
-          <label>
-            <input type="radio" id="choiceBored" name="feelings" value="bored">Bored</label>
-        </div><!--radio-->
-        <button type="submit" class="btn btn-primary" id="affirmationButton">Affirmation, please!</button>
+        <form id="affirmationsQuestions">
+
+          <h3>Affirmations by Mel</h3>
+          <p>Let Meli know how you're feeling and recieve an affirmation in return :)</p>
+          <div class="radio">
+            <label>
+              <input type="radio" id="choiceHappy" name="feelings" value=1 checked>Happy</label>
+          </div><!--radio-->
+          <div class="radio">
+            <label>
+              <input type="radio" id="choiceSad" name="feelings" value=2>Sad</label>
+          </div><!--radio-->
+          <div class="radio">
+            <label>
+              <input type="radio" id="choiceBored" name="feelings" value=3>Bored</label>
+          </div><!--radio-->
+          <div class="radio">
+            <label>
+              <input type="radio" id="choiceStressed" name="feelings" value=4>Stressed</label>
+          </div><!--radio-->
+          <button type="submit" class="btn btn-primary" id="affirmationButton">Affirmation, please!</button>
+        </form>
       </div><!--affirmations-->
 
       <div id="advice" class="initially-hidden">
