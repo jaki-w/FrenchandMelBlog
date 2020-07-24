@@ -108,15 +108,20 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#affirmationButton").click(function(event) {
 
+  let quizScore = 0;
   const feelings = $("input:radio[name = feelings]:checked").val();
+  const experiences = $("input:checkbox[name=experiences]:checked");
 
-  if(feelings === 'happy') {
-    alert("wo!");
-  } else if(feelings === 'sad') {
-    alert("so sad!");
+  if (feelings === 1) {
+    quizScore += 1;
+  } else if (feelings === 2) {
+    quizScore += 2;
+  } else if (feelings === 3) {
+    quizScore += 3;
   } else {
-    alert("aha!");
+    quizScore += 4;
   }
+    alert(quizScore);
   });
 });
 
