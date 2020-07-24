@@ -107,13 +107,32 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#affirmationButton").click(function(event) {
+    event.preventDefault();
+    let quizScore = 0;
+    const feelings = parseInt($("input:radio[name = feelings]:checked").val());
 
-  let quizScore = 0;
-  const feelings = parseInt($("input:radio[name = feelings]:checked").val());
-  const experiences = $("input:checkbox[name=experiences]:checked");
+    $("input:checkbox[name=experiences]:checked").each(function() {
+      const experiencesTotal = parseInt($(this).val());
+      quizScore += experiencesTotal;
+    });
 
-  quizScore += feelings;
-  alert(quizScore);
+    $("input:checkbox[name=events]:checked").each(function() {
+      const eventsTotal = parseInt($(this).val());
+      quizScore += eventsTotal;
+    });
+
+    quizScore += feelings;
+
+    if (quizScore <= 6) {
+      alert("happy");
+    } else if (quizScore > 6 && quizScore < 11) {
+    alert("bored");
+  } else if (quizScore > 11 &&  quizScore < 14 ) {
+    alert("sad");
+  } else {
+    alert("stressed");
+  }
+
   });
 });
 
