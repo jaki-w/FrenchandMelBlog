@@ -109,19 +109,11 @@ $(document).ready(function() {
   $("#affirmationButton").click(function(event) {
 
   let quizScore = 0;
-  const feelings = $("input:radio[name = feelings]:checked").val();
+  const feelings = parseInt($("input:radio[name = feelings]:checked").val());
   const experiences = $("input:checkbox[name=experiences]:checked");
 
-  if (feelings === 1) {
-    quizScore += 1;
-  } else if (feelings === 2) {
-    quizScore += 2;
-  } else if (feelings === 3) {
-    quizScore += 3;
-  } else {
-    quizScore += 4;
-  }
-    alert(quizScore);
+  quizScore += feelings;
+  alert(quizScore);
   });
 });
 
